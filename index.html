@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .meme {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .meme img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .meme h2 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 0;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Meme Gallery!</h1>
+    </header>
+    <div class="container">
+        <div class="gallery">
+            <div class="meme">
+                <img src="https://via.placeholder.com/300" alt="Meme 1">
+                <h2>When you realize it's Monday...</h2>
+            </div>
+            <div class="meme">
+                <img src="https://via.placeholder.com/300" alt="Meme 2">
+                <h2>That moment when coffee saves the day!</h2>
+            </div>
+            <div class="meme">
+                <img src="https://via.placeholder.com/300" alt="Meme 3">
+                <h2>Programming: Expectation vs Reality</h2>
+            </div>
+            <div class="meme">
+                <img src="https://via.placeholder.com/300" alt="Meme 4">
+                <h2>When the Wi-Fi drops during your stream...</h2>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Meme Gallery. Created with ❤️ by <a href="#">Your Name</a>.</p>
+    </footer>
+</body>
+
+</html>
